@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/sun-favicon.png">
+    <title>Experiments page</title>
+</head>
+<body>
+    <main>
+        <h1>Experiments Page</h1>
+        <picture>
+            <source srcset="assets/portrait-blur.webp" media="(width >= 1000px)">
+            <source srcset="assets/portrait-nobg.jpg" media="(width >= 850px)">
+            <img src="assets/placeholder.png" alt="Portrait of Elaine Sun" width="310" height="400">
+        </picture><br>
+
+        <video controls width="250">
+            <source src="assets/matcha-vid.webm" type="video/webm">
+            I'm sorry; your browser doesn't support HTML video.
+        </video><br>
+
+        <figure>
+            <figcaption>Here is a funny ringtone:</figcaption>
+            <audio controls src="assets/audio.mp3"></audio>
+        </figure>
+
+        <section>
+            <h2>Template</h2>
+            <template>
+                <article>
+                    <h3>Template Card</h3>
+                    <p>This content is inside a &lt;template&gt; and is not rendered by default.</p>
+                </article>
+            </template>
+            <p>The template above is intentionally <em>not</em> cloned in HW2. Its markup exists solely to demonstrate the element.</p>
+        </section>
+
+        <!-- CANVAS (≤15 lines of JS) -->
+        <section>
+            <h2>Canvas</h2>
+            <canvas id="demo" width="360" height="140">
+                Your browser does not support the canvas element.
+            </canvas>
+            <script>
+                // ≤ 15 lines total, simple drawing demo
+                const c = document.getElementById('demo');
+                const ctx = c.getContext('2d');
+                ctx.fillStyle = '#8f9779';
+                ctx.fillRect(0, 0, c.width, c.height);
+                ctx.fillStyle = '#111111';
+                ctx.font = '16px sans-serif';
+                ctx.fillText('Hello, canvas!', 14, 30);
+                ctx.beginPath();
+                ctx.moveTo(14, 50);
+                ctx.lineTo(200, 50);
+                ctx.stroke();
+                ctx.fillRect(14, 70, 60, 40);
+            </script>
+            <noscript>JavaScript is disabled; the canvas demo will not render.</noscript>
+        </section>
+
+        <section>
+            <h2>Extra credit:</h2>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+                <mrow>
+                    <mi>E</mi>
+                    <mo>=</mo>
+                    <mi>m</mi>
+                    <mo>&InvisibleTimes;</mo>
+                    <msup>
+                        <mi>c</mi>
+                        <mn>2</mn>
+                    </msup>
+                </mrow>
+            </math>
+        </section>
+
+    </main>
+
+</body>
+</html>

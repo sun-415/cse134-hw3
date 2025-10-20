@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the landing page for Elaine Sun's portfolio.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="assets/sun-favicon.png">
+    <title>Homepage</title>
+
+    <style>
+        h1, h2{
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        class HelloWorldLog extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello world!");
+            }
+        }
+        customElements.define("hello-world-log", HelloWorldLog);
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments.html</a></li>
+            </ul>
+        </nav>
+
+        <theme-toggle>
+            <button type="button"><img src="assets/sun.svg" alt="Swith to light mode" width="12" height="12"></button>
+            <button type="button"><img src="assets/moon.png" alt="Swithc to dark mode" width="15" height="15"></button>
+        </theme-toggle>
+    </header>
+
+    <main>
+        <dialog open>
+            <p>Hello there! My name is Elaine Sun and welcome to my portfolio!</p>
+            <form method="dialog">
+                <button>close</button>
+            </form>
+        </dialog>
+        <div>
+            <h2><i>Elaine Sun</i></h2>
+            <h1><strong>Portfolio</strong></h1>
+        </div>
+    </main>
+
+    <footer>
+        <section>
+            <h3>Get in Touch</h3>
+            <p>Want to chat? Just shoot me a message on any of the socials or email me <b><em>elainesun64@gmail.com</em></b>, and I'll reply as soon as I can.</p>
+        </section>
+    
+        <section>
+            <h3>Quick links</h3>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="expertise.html">expertise</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="https://github.com/sun-415">
+                    <img src="assets/github-logo.svg" alt="GitHub logo" width="25" height="25"></a></li>
+                <li><a href="https://www.linkedin.com/in/elaine-sun-415s/">
+                    <img src="assets/linkedin-logo.svg" alt="Linkedin logo" width="20" height="20"></a></li>
+                <li><a href="https://www.instagram.com/_elaine.sun_/">
+                    <img src="assets/insta-logo.svg" alt="Instagram logo" width="26" height="26"></a></li>
+            </ul>
+        </section>
+    
+        <hr>
+        <p>©<svg width="10" height="20" viewBox="0 0 24 24" aria-hidden="true"> <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9" fill="black" /></svg> 2025 Elaine Sun </p> 
+    
+    </footer>
+
+    <hello-world-log></hello-world-log>
+    <noscript>JavaScript is disabled; the form will submit without client-side enhancements.</noscript>
+</body>
+</html>
