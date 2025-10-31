@@ -1,6 +1,15 @@
-header, nav, main, section, article, footer {
-    border: 3px solid transparent;
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gloock&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+nav, ul {
+    padding: 1rem;
+}
+
 
 theme-toggle {
     display: inline-flex;
