@@ -90,3 +90,28 @@ theme-toggle button {
     padding: .25rem;
     cursor: pointer;
 }
+
+#landing-text {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    color: var(--forest-green5);
+}
+
+#landing-text h1 {
+    text-align: center;
+    font-family: "epilogue";
+    font-size: 8rem;
+}
+
+#landing-text h2 {
+    text-align: center;
+    font-family: "Gloock", sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+
+
+
