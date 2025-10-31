@@ -1,4 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gloock&display=swap');
+:root {
+    --neutral-beige1: #DDBEA9;
+    --neutral-beige2: #FFE8D6;
+    --neutral-beige3: #D4C7B0;
+    --neutral-green1: #B7B7A4;
+    --neutral-green2: #A5A58D;
+    --neutral-green3: #636856; /*potential nav*/
+    --neutral-green4: #3F4238;
+
+    --earthy-grey: #DAD7CD; /*potential base*/
+    --earthy-green1: #A3B18A;
+    --earthy-green2: #588157;
+    --earthy-green3: #3A5A40;
+    --earthy-green4: #344E41;
+
+    --forest-green1: #A1CCA5;
+    --forest-green2: #8FB996;
+    --forest-green3: #709775;
+    --forest-green4: #415D43;
+    --forest-green5: #111D13;
+
+    --warm-beige: #B6AD90;
+    --warm-green1: #C2C5AA;
+    --warm-green2: #A4AC86;
+    --warm-green3: #656D4A;
+    --warm-green4: #414833;
+    --warm-green5: #333D29;
+}
 
 * {
     margin: 0;
@@ -7,6 +35,7 @@
 }
 
 html, body{
+    background-color: var(--earthy-grey);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,7 +49,7 @@ nav, ul {
 
 header {
     width: 100vw;
-    background-color: blue;
+    background-color: var(--neutral-green3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,18 +65,18 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--earthy-grey);
 }
 
 nav a:hover {
-    color: aqua;
+    color: white;
 }
 
 
 
 
 theme-toggle {
-    background-color: white;
+    background-color: var(--earthy-grey);
     display: inline-flex;
     gap: 1rem;
     border: 2px solid grey;
@@ -56,7 +85,7 @@ theme-toggle {
     border-radius: .5rem;
 }
 theme-toggle button {
-    background-color: white;
+    background-color: var(--earthy-grey);
     border: 0;
     padding: .25rem;
     cursor: pointer;
