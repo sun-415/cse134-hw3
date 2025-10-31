@@ -6,20 +6,57 @@
     box-sizing: border-box;
 }
 
-nav, ul {
-    padding: 1rem;
+html, body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+nav, ul {
+    list-style: none;
+}
+
+header {
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul {
+    width: 24rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    font-size: 1.3rem;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+
 
 
 theme-toggle {
+    background-color: white;
     display: inline-flex;
-    gap: .5rem;
+    gap: 1rem;
     border: 2px solid grey;
-    padding: .25rem .5rem;
+    margin: 2rem 4rem;
+    padding: .25rem .4rem;
     border-radius: .5rem;
 }
 theme-toggle button {
-    background: none;
+    background-color: white;
     border: 0;
     padding: .25rem;
     cursor: pointer;
