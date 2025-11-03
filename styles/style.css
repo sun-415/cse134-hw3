@@ -34,10 +34,14 @@
     box-sizing: border-box;
 }
 
-html, body{
+html {
     background-color: var(--earthy-grey);
+    min-height: 100%;
+
+}
+
+body{
     min-height: 100vh;
-    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,7 +53,7 @@ nav, ul {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     background-color: var(--neutral-green3);
     color: var(--earthy-grey);
     display: flex;
@@ -99,7 +103,7 @@ header {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     color: var(--forest-green5);
 
     h1 {
@@ -118,7 +122,7 @@ header {
 
 /* Content for about me page */
 #about-me-content {
-    width: 75vw;
+    width: 75%;
     margin-top: 8rem;
 
     section:nth-child(1) {
@@ -160,9 +164,11 @@ header {
 
 }
 
+/* Content for expertise page */
+
 
 footer {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -172,7 +178,7 @@ footer {
     font-size: 0.9rem;
 
     div {
-        width: 75vw;
+        width: 75%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -181,13 +187,13 @@ footer {
         margin-left: -5rem;
 
         section:nth-child(1) {
-            width: 30vw;
+            width: 30%;
             line-height: 1.1rem;
         }
 
         section:nth-child(2) {
             line-height: 1.2rem;
-            margin-left: -10rem;
+            margin-left: -5rem;
 
             ul {
                 width: 15vw;
@@ -230,7 +236,7 @@ footer {
         border: none;
         height: 0.5px;
         background-color: var(--earthy-grey);
-        width: 95vw;
+        width: 95%;
         margin: 1rem 0rem;
     }
 
