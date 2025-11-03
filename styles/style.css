@@ -51,6 +51,7 @@ nav, ul {
 header {
     width: 100vw;
     background-color: var(--neutral-green3);
+    color: var(--earthy-grey);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,15 +63,16 @@ header {
             justify-content: space-between;
             margin-left: 5rem;
             font-size: 1.3rem;
+            
+            a {
+                color: inherit;
+            }
+    
+            a:hover {
+                color: white;
+            }
         }
 
-        a {
-            color: var(--earthy-grey);
-        }
-
-        a:hover {
-            color: white;
-        }
     }
 
     theme-toggle {
@@ -195,12 +197,17 @@ footer {
 
                 li {
                     margin: 0rem 0.3rem;
+                    
+                    a {
+                        color: inherit;
+                    }
+        
+                    a:hover {
+                        color: white;
+                    }
                 }
             }
 
-            a {
-                color: inherit;
-            }
         }
 
         section:nth-child(3) {
