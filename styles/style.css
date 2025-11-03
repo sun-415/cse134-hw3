@@ -188,10 +188,14 @@ footer {
             margin-left: -10rem;
 
             ul {
-                width: 11vw;
+                width: 15vw;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: flex-start;
+
+                li {
+                    margin: 0rem 0.3rem;
+                }
             }
 
             a {
