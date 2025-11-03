@@ -18,7 +18,7 @@
     --forest-green2: #8FB996;
     --forest-green3: #709775;
     --forest-green4: #415D43;
-    --forest-green5: #111D13;
+    --forest-green5: #111D13; /*pontential font*/
 
     --warm-beige: #B6AD90;
     --warm-green1: #C2C5AA;
@@ -112,6 +112,67 @@ theme-toggle button {
     font-weight: normal;
 }
 
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neutral-green3);
+    color: var(--earthy-grey);
+    font-size: 0.9rem;
 
+    div {
+        width: 75vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 1.6rem;
+        margin-left: -5rem;
 
+        section:nth-child(1) {
+            width: 30vw;
+            line-height: 1.1rem;
+        }
 
+        section:nth-child(2) {
+            line-height: 1.2rem;
+            margin-left: -10rem;
+
+            ul {
+                width: 11vw;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+
+        section:nth-child(3) {
+            margin-left: -5rem;
+
+            ul {
+                display: flex;
+                width: 6vw;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    hr {
+        border: none;
+        height: 0.5px;
+        background-color: var(--earthy-grey);
+        width: 95vw;
+        margin: 1rem 0rem;
+    }
+
+    small {
+        padding-bottom: 1.5rem;
+    }
+}
