@@ -53,43 +53,45 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    nav {
+        ul {
+            width: 24rem;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5rem;
+            font-size: 1.3rem;
+        }
+
+        a {
+            color: var(--earthy-grey);
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    theme-toggle {
+        background-color: var(--earthy-grey);
+        display: inline-flex;
+        gap: 1rem;
+        border: 2px solid grey;
+        margin: 2rem 4rem;
+        padding: .25rem .4rem;
+        border-radius: .5rem;
+    }
+    theme-toggle button {
+        background-color: var(--earthy-grey);
+        border: 0;
+        padding: .25rem;
+        cursor: pointer;
+    }
 }
 
 
-nav ul {
-    width: 24rem;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5rem;
-    font-size: 1.3rem;
-}
-
-nav a {
-    color: var(--earthy-grey);
-}
-
-nav a:hover {
-    color: white;
-}
 
 
-
-
-theme-toggle {
-    background-color: var(--earthy-grey);
-    display: inline-flex;
-    gap: 1rem;
-    border: 2px solid grey;
-    margin: 2rem 4rem;
-    padding: .25rem .4rem;
-    border-radius: .5rem;
-}
-theme-toggle button {
-    background-color: var(--earthy-grey);
-    border: 0;
-    padding: .25rem;
-    cursor: pointer;
-}
 
 #landing-text {
     display: flex;
@@ -97,20 +99,22 @@ theme-toggle button {
     align-items: center;
     width: 100vw;
     color: var(--forest-green5);
+
+    h1 {
+        text-align: center;
+        font-family: "epilogue";
+        font-size: 8rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Gloock", sans-serif;
+        font-size: 4rem;
+        font-weight: normal;
+    }
 }
 
-#landing-text h1 {
-    text-align: center;
-    font-family: "epilogue";
-    font-size: 8rem;
-}
 
-#landing-text h2 {
-    text-align: center;
-    font-family: "Gloock", sans-serif;
-    font-size: 4rem;
-    font-weight: normal;
-}
 
 footer {
     width: 100vw;
