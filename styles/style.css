@@ -208,9 +208,13 @@ footer {
 
             ul {
                 display: flex;
-                width: 6vw;
-                justify-content: space-between;
+                width: 8vw;
+                justify-content: flex-start;
                 align-items: center;
+                
+                li {
+                    margin: 0rem 0.3rem;
+                } 
             }
         }
     }
