@@ -37,6 +37,7 @@
 html, body{
     background-color: var(--earthy-grey);
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -91,8 +92,7 @@ header {
 
 
 
-
-
+/* Content for landing page */
 #landing-text {
     display: flex;
     flex-direction: column-reverse;
@@ -114,6 +114,49 @@ header {
     }
 }
 
+/* Content for about me page */
+#about-me-content {
+    width: 75vw;
+    margin-top: 8rem;
+
+    section:nth-child(1) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 2rem;
+        margin-bottom: 8rem;
+
+        hgroup {
+            width: 60%;
+        }
+
+        picture img{
+            display: block;
+            border-radius: 10%;
+        }
+    }
+
+    section:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10rem;
+
+        hgroup {
+            width: 91%;
+            margin-bottom: 0.5rem;
+            line-height: 2rem;
+        }
+
+        iframe {
+            width: 92%;
+            border-radius: 2%;
+        }
+    }
+
+}
 
 
 footer {
