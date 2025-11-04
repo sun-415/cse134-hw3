@@ -59,7 +59,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: var(--forest-green5);
+    color: var(--forest-green5, black);
 }
 
 nav, ul {
@@ -72,8 +72,8 @@ a {
 
 header {
     width: 100%;
-    background-color: var(--neutral-green3);
-    color: var(--earthy-grey);
+    background-color: var(--neutral-green3, grey);
+    color: var(--earthy-grey, white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,7 +117,7 @@ header {
     }
 
     theme-toggle {
-        background-color: var(--earthy-grey);
+        background-color: var(--earthy-grey, white);
         display: inline-flex;
         gap: 1rem;
         border: 2px solid grey;
@@ -126,7 +126,7 @@ header {
         border-radius: .5rem;
     }
     theme-toggle button {
-        background-color: var(--earthy-grey);
+        background-color: var(--earthy-grey, white);
         border: 0;
         padding: .25rem;
         cursor: pointer;
@@ -267,12 +267,12 @@ header {
         }
 
         article {
-            background-color: var(--neutral-green2);
+            background-color: var(--neutral-green2, grey);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
-            border: 0.1px solid var(--earthy-grey);
+            border: 0.1px solid var(--earthy-grey, white);
             border-radius: 10%;
             overflow: clip;
 
@@ -297,8 +297,8 @@ header {
                 margin-top: 0.3rem;
 
                 li {
-                    background-color: var(--earthy-grey);
-                    border: 0.1px solid var(--earthy-grey);
+                    background-color: var(--earthy-grey, white);
+                    border: 0.1px solid var(--earthy-grey white);
                     border-radius: 0.8rem;
                     padding: 0.1rem 0.3rem;
                     font-size: 0.7rem;
@@ -306,8 +306,8 @@ header {
             }
 
             a, .coming-soon {
-                background-color: var(--earthy-grey);
-                border: 0.1px solid var(--earthy-grey);
+                background-color: var(--earthy-grey, white);
+                border: 0.1px solid var(--earthy-grey, white);
                 border-radius: 0.4rem;
                 margin: 0.7rem 3rem 1.3rem;
                 padding: .4rem 0.3rem;
@@ -349,7 +349,7 @@ header {
 
     /* focus styles for accessibility */
     input:focus, textarea:focus {
-        border-color: var(--neutral-green3);
+        border-color: var(--neutral-green3, grey);
         box-shadow: 0 0 0 3px rgba(63,66,56,.15);
     }
 
@@ -358,8 +358,8 @@ header {
         padding: 0.9rem 2.5rem;
         border-radius: 0.7rem;
         border: none;
-        background-color: var(--neutral-green4);
-        color: var(--earthy-grey);
+        background-color: var(--neutral-green4, black);
+        color: var(--earthy-grey, white);
         font-weight: 700;
         cursor: pointer;
         font-family: inherit;
@@ -378,7 +378,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--neutral-green3);
+    background-color: var(--neutral-green3, grey);
     color: var(--earthy-grey);
     font-size: 0.9rem;
 
@@ -444,7 +444,7 @@ footer {
     hr {
         border: none;
         height: 0.5px;
-        background-color: var(--earthy-grey);
+        background-color: var(--earthy-grey, white);
         width: 95%;
         margin: 1rem 0rem;
     }
