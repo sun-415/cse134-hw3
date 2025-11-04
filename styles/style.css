@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --neutral-beige1: #DDBEA9;
     --neutral-beige2: #FFE8D6;
@@ -37,6 +39,7 @@
 html {
     background-color: var(--earthy-grey);
     min-height: 100%;
+    font-family: "Bitter", sans-serif;
 
 }
 
@@ -47,6 +50,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: var(--forest-green5);
 }
 
 nav, ul {
@@ -105,7 +109,7 @@ header {
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
-    color: var(--forest-green5);
+    color: inherit;
 
     h1 {
         text-align: center;
@@ -125,16 +129,21 @@ header {
 #about-me-content {
     width: 75%;
     margin-top: 8rem;
+    color: inherit;
 
     section:nth-child(1) {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        line-height: 2rem;
+        line-height: 1.8rem;
         margin-bottom: 8rem;
 
         hgroup {
             width: 60%;
+
+            h1 {
+                margin-bottom: 0.5rem;
+            }
         }
 
         picture img{
@@ -169,7 +178,7 @@ header {
 #expertise-content {
     width: 70%;
     margin-top: 6rem;
-    color: var(--forest-green5);
+    color: inherit;
     
     a {
         text-decoration: none;
@@ -315,6 +324,7 @@ header {
         color: var(--earthy-grey);
         font-weight: 700;
         cursor: pointer;
+        font-family: inherit;
     }
 
     input[type="submit"]:hover {
@@ -346,14 +356,18 @@ footer {
         section:nth-child(1) {
             width: 30%;
             line-height: 1.1rem;
+
+            p {
+                font-size: 0.8rem;
+            }
         }
 
         section:nth-child(2) {
             line-height: 1.2rem;
-            margin-left: -5rem;
+            margin-left: -4rem;
 
             ul {
-                width: 15vw;
+                width: 18vw;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
