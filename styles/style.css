@@ -28,6 +28,15 @@
     --warm-green3: #656D4A;
     --warm-green4: #414833;
     --warm-green5: #333D29;
+
+    --dur-1: 150ms;
+    --dur-2: 300ms;
+    --dur-3: 600ms;
+    --ease: cubic-bezier(.2,.7,.2,1);
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; }
 }
 
 * {
@@ -57,6 +66,10 @@ nav, ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     width: 100%;
     background-color: var(--neutral-green3);
@@ -75,10 +88,29 @@ header {
             
             a {
                 color: inherit;
+                position: relative;
+                text-decoration: none;
             }
     
             a:hover {
                 color: white;
+            }
+
+            a::after {
+                content:"";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -0.25rem;
+                height: 2px;
+                background-color: currentColor;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform var(--dur-2) var(--ease);
+            }
+
+            a:hover::after{ 
+                transform: scaleX(1);
             }
         }
 
@@ -100,8 +132,6 @@ header {
         cursor: pointer;
     }
 }
-
-
 
 /* Layout for landing page */
 #landing-text {
@@ -183,7 +213,10 @@ header {
     a {
         text-decoration: none;
         color: inherit;
+    }
 
+    a:hover {
+        filter: brightness(1.1);
     }
 
     #experiences-content {
