@@ -2,58 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --neutral-beige1: #DDBEA9;
-    --neutral-beige2: #FFE8D6;
-    --neutral-beige3: #D4C7B0;
-    --neutral-green1: #B7B7A4;
     --neutral-green2: #A5A58D;
     --neutral-green3: #636856; /*potential nav*/
     --neutral-green4: #3F4238;
-
     --earthy-grey: #DAD7CD; /*potential base*/
-    --earthy-green1: #A3B18A;
-    --earthy-green2: #588157;
-    --earthy-green3: #3A5A40;
-    --earthy-green4: #344E41;
-
-    --forest-green1: #A1CCA5;
-    --forest-green2: #8FB996;
-    --forest-green3: #709775;
-    --forest-green4: #415D43;
     --forest-green5: #111D13; /*pontential font*/
-
-    --warm-beige: #B6AD90;
-    --warm-green1: #C2C5AA;
-    --warm-green2: #A4AC86;
-    --warm-green3: #656D4A;
-    --warm-green4: #414833;
-    --warm-green5: #333D29;
 
     --dur-1: 150ms;
     --dur-2: 300ms;
     --dur-3: 600ms;
     --ease: cubic-bezier(.2,.7,.2,1);
-
-    /* Fluid scale for headings; body stays readable */
-    --step-0: clamp(0.95rem, 0.6rem + 1.2vw, 1.1rem);   /* base */
-    --step-1: clamp(1.1rem, 0.6rem + 2vw, 1.35rem);      /* h3 */
-    --step-2: clamp(1.35rem, 0.8rem + 3vw, 1.9rem);      /* h2 */
-    --step-3: clamp(2.2rem, 1.2rem + 6vw, 4.8rem);       /* hero */
-}
-
-/* Use the steps */
-h1 { font-size: var(--step-3); }
-h2 { font-size: var(--step-2); }
-h3 { font-size: var(--step-1); }
-body { font-size: var(--step-0); }
-
-/* Keep big sections visible on short phones */
-main { min-block-size: 60dvh; }
-
-/* Improve focus visibility everywhere */
-a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
-  outline: 3px solid color-mix(in oklab, var(--earthy-green2), white 70%);
-  outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce){
