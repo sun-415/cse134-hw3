@@ -18,7 +18,44 @@
   *{ animation:none !important; transition:none !important; }
 }
 
+@media (min-width: 481px) {
+    .nav { display: none; }
+    .hamburger { display: none; }
+    #site-nav ul{ display: none;}
+}
+
 @media (max-width: 480px) {
+    header{ position:relative; padding-inline:4svw; }
+
+    .nav{ width:100%; }
+    .hamburger{
+        display:inline-flex;
+        padding:.6rem .8rem;
+        border-radius:.6rem;
+        background: rgba(0,0,0,.06);
+        cursor:pointer;
+        user-select:none;
+    }
+
+    /* Make the 3 lines (pure CSS) */
+    .hamburger::after{
+        content:""; display:inline-block; width:19px; height:3px; background:currentColor;
+        box-shadow: 0 -6px 0 currentColor, 0 6px 0 currentColor;  /* three bars */
+    }
+
+    /* Menu panel is collapsed when <details> is closed */
+    nav ul{
+        max-height:0; overflow:hidden; transition:max-height 250ms ease;
+        margin-top:.6rem; margin-bottom: 1rem; padding:.2rem; list-style:none; display:flex; flex-direction:column; gap:.4rem;
+        border-radius:.6rem;
+    }
+
+    /* Open state: expands when the user toggles <summary> */
+    .nav[open] #site-nav ul{ max-height:60dvh; }
+
+    /* Optional: style summary focus visibly */
+    .hamburger:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+
     #about-me-content {
         width: min(92svw, 48rem);
         margin-top: 4rem; 
