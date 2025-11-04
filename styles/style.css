@@ -2,11 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --neutral-green2: #A5A58D;
-    --neutral-green3: #636856; /*potential nav*/
+    --neutral-green3: #636856; /* nav */
     --neutral-green4: #3F4238;
-    --earthy-grey: #DAD7CD; /*potential base*/
-    --forest-green5: #111D13; /*pontential font*/
+    --earthy-grey: #DAD7CD; /* base */
+    --forest-green5: #111D13; /* font */
 
     --dur-1: 150ms;
     --dur-2: 300ms;
