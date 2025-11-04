@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+    --neutral-green2: #A5A58D;
     --neutral-green3: #636856; /* nav */
     --neutral-green4: #3F4238;
     --earthy-grey: #DAD7CD; /* base */
@@ -15,6 +16,29 @@
 
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
+}
+
+@media (max-width: 480px) {
+    #about-me-content {
+        width: min(92svw, 48rem);
+        margin-top: 4rem; 
+    }
+
+    #about-me-content section:nth-child(1) {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #project-cards {
+        flex-direction: column;
+    }
+
+    a {
+        text-decoration: underline !important;   /* always visible */
+        text-underline-offset: 0.12em;
+    }
+
+    header nav a::after { display: none; }
 }
 
 * {
@@ -240,7 +264,6 @@ header {
         #project-cards {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
             gap: 1.2rem;
             margin-top: 1.4rem;
         }
