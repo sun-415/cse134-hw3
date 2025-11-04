@@ -33,6 +33,27 @@
     --dur-2: 300ms;
     --dur-3: 600ms;
     --ease: cubic-bezier(.2,.7,.2,1);
+
+    /* Fluid scale for headings; body stays readable */
+    --step-0: clamp(0.95rem, 0.6rem + 1.2vw, 1.1rem);   /* base */
+    --step-1: clamp(1.1rem, 0.6rem + 2vw, 1.35rem);      /* h3 */
+    --step-2: clamp(1.35rem, 0.8rem + 3vw, 1.9rem);      /* h2 */
+    --step-3: clamp(2.2rem, 1.2rem + 6vw, 4.8rem);       /* hero */
+}
+
+/* Use the steps */
+h1 { font-size: var(--step-3); }
+h2 { font-size: var(--step-2); }
+h3 { font-size: var(--step-1); }
+body { font-size: var(--step-0); }
+
+/* Keep big sections visible on short phones */
+main { min-block-size: 60dvh; }
+
+/* Improve focus visibility everywhere */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--earthy-green2), white 70%);
+  outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -262,6 +283,7 @@ header {
         #project-cards {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             gap: 1.2rem;
             margin-top: 1.4rem;
         }
@@ -458,3 +480,4 @@ footer {
         padding-bottom: 1.5rem;
     }
 }
+
