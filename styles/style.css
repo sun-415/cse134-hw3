@@ -99,7 +99,7 @@ header {
 
 
 
-/* Content for landing page */
+/* Layout for landing page */
 #landing-text {
     display: flex;
     flex-direction: column-reverse;
@@ -121,7 +121,7 @@ header {
     }
 }
 
-/* Content for about me page */
+/* Layout for about me page */
 #about-me-content {
     width: 75%;
     margin-top: 8rem;
@@ -165,7 +165,7 @@ header {
 
 }
 
-/* Content for expertise page */
+/* Layout for expertise page */
 #expertise-content {
     width: 70%;
     margin-top: 6rem;
@@ -268,6 +268,60 @@ header {
             }
         }
     }
+}
+
+/* Layout for contact page */
+#contact-form {
+    margin: 6rem;
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* inputs & textarea share the same look */
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 0.7rem 1rem;
+        border-radius: 12px;
+        border: 1.5px solid rgba(0,0,0,.15);
+        background: rgba(0,0,0,.05);
+        outline: none;
+        font-size: 1rem;
+    }
+
+    textarea {
+        min-height: 7rem;
+        resize: vertical; /* allow user to expand if needed */
+    }
+
+    /* focus styles for accessibility */
+    input:focus, textarea:focus {
+        border-color: var(--neutral-green3);
+        box-shadow: 0 0 0 3px rgba(63,66,56,.15);
+    }
+
+    input[type="submit"] {
+        align-self: center;  
+        padding: 0.9rem 2.5rem;
+        border-radius: 0.7rem;
+        border: none;
+        background-color: var(--neutral-green4);
+        color: var(--earthy-grey);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        filter: brightness(1.2);
+    }
+
+
 }
 
 footer {
