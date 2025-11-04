@@ -369,8 +369,13 @@ header {
         filter: brightness(1.2);
     }
 
-
+    :has(:invalid) label::after {
+        content: " *";
+        color: #b00020;
+        font-weight: 700;
+    }
 }
+
 
 footer {
     width: 100%;
