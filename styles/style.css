@@ -39,6 +39,61 @@
     }
 
     header nav a::after { display: none; }
+
+    #experiences-content article{
+        /* keep logo column small, give text room */
+        display: grid;
+        grid-template-columns: 3rem 1fr;
+        grid-auto-rows: min-content;
+        column-gap: .9rem;
+        row-gap: .25rem;
+        margin-block: 1.2rem;
+    }
+
+    /* Make the disclosure text span full width under the header row */
+    #experiences-content{
+        /* Logo smaller & rounded */
+        img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: .6rem;
+            object-fit: cover;
+            grid-row: 1; /* sit next to the title row */
+        }
+
+        /* Company name + date: stack date, remove float */
+        h3 {
+            font-size: 1rem;
+            line-height: 1.3;
+            overflow-wrap: anywhere;        /* prevent overflow on tiny screens */
+
+            span {
+                display: block;
+                float: none;                    /* kill the desktop float */
+                font-weight: 400;
+                font-size: .9rem;
+                opacity: .8;
+                margin-top: .15rem;
+            }
+        }
+
+        details {
+            grid-column: 1 / -1;
+
+            p {
+                line-height: 1.6;
+                font-size: .95rem;
+            }
+        }
+
+        summary {
+            padding: .5rem .25rem;
+            border-radius: .4rem;
+            background: rgba(0,0,0,.05);
+            cursor: pointer;                /* clearer affordance */
+        }
+
+    }
 }
 
 * {
